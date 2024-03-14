@@ -49,6 +49,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="LLamaSharp.Backend.OpenCL"/>
+	  <PackageReference Include="LLamaSharp.Backend.Cpu"/>
+    <PackageReference Include="LLamaSharp.Backend.Cuda12"/>
   </ItemGroup>
 
 </Project>
