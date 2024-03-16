@@ -346,3 +346,5 @@ site/
 /LLama.Unittest/Models/*.bin
 /LLama.Unittest/Models/*.gguf
 
+LlavaTest/llama.dll
+LlavaTest/llava_shared.dll
