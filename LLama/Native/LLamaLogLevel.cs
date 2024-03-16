@@ -6,6 +6,11 @@
     public enum LLamaLogLevel
     {
         /// <summary>
+        /// Logs that are used for interactive investigation during development.
+        /// </summary>
+        Debug = 1,
+
+        /// <summary>
         /// Logs that highlight when the current flow of execution is stopped due to a failure.
         /// </summary>
         Error = 2,
@@ -18,11 +23,6 @@
         /// <summary>
         /// Logs that track the general flow of the application.
         /// </summary>
-        Info = 4,
-
-        /// <summary>
-        /// Logs that are used for interactive investigation during development.
-        /// </summary>
-        Debug = 5,
+        Info = 4
     }
 }

@@ -48,21 +48,20 @@ public unsafe struct LLamaModelMetadataOverride
 /// <summary>
 /// Specifies what type of value is being overridden by LLamaModelKvOverride
 /// </summary>
-/// <remarks>llama_model_kv_override_type</remarks>
 public enum LLamaModelKvOverrideType
 {
     /// <summary>
     /// Overriding an int value
     /// </summary>
-    Int = 0,
+    LLAMA_KV_OVERRIDE_INT = 0,
 
     /// <summary>
     /// Overriding a float value
     /// </summary>
-    Float = 1,
+    LLAMA_KV_OVERRIDE_FLOAT = 1,
 
     /// <summary>
     /// Overriding a bool value
     /// </summary>
-    Bool = 2,
+    LLAMA_KV_OVERRIDE_BOOL = 2,
 }

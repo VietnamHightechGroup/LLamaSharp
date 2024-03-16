@@ -1,12 +1,12 @@
-﻿namespace LLama.Native;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-/// <summary>
-/// 
-/// </summary>
-/// <remarks>llama_vocab_type</remarks>
-public enum LLamaVocabType
+namespace LLama.Native
 {
-    SentencePiece = 0,
-    BytePairEncoding = 1,
-    WordPiece = 2,
+    public enum LLamaVocabType
+    {
+        LLAMA_VOCAB_TYPE_SPM = 0, // SentencePiece
+        LLAMA_VOCAB_TYPE_BPE = 1, // Byte Pair Encoding
+    };
 }

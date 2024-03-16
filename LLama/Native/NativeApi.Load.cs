@@ -30,7 +30,7 @@ namespace LLama.Native
                     "4. Try to compile llama.cpp yourself to generate a libllama library, then use `LLama.Native.NativeLibraryConfig.WithLibrary` " +
                     "to specify it at the very beginning of your code. For more informations about compilation, please refer to LLamaSharp repo on github.\n");
             }
-            llama_backend_init();
+            llama_backend_init(false);
         }
 
         private static void Log(string message, LogLevel level)
@@ -338,6 +338,7 @@ namespace LLama.Native
         }
 
         internal const string libraryName = "llama";
+        internal const string llavaLibName = "llava_shared";
         private const string cudaVersionFile = "version.json";
         private const string loggingPrefix = "[LLamaSharp Native]";
         private static bool enableLogging = false;
